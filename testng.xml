@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+
+    <test name="Complete and finsh scenario of Getting Random product with price">
+        <classes>
+            <class name="Testcases.TC01_Login">
+                <methods>
+                    <include name="LoginWithValidData_P"/>
+                </methods>
+            </class>
+            <class name="Testcases.TC2_Products">
+                <methods>
+                    <include name="Check_Get_RandomProducts"/>
+                </methods>
+            </class>
+            <class name="Testcases.TC03_YourCartPage">
+                <methods>
+                    <include name="Click_CheckOutFromYpurCart"/>
+                </methods>
+            </class>
+            <class name="Testcases.TC04_CheckoutYourInformation">
+                <methods>
+                    <include name="CheckoutYourInformation"/>
+                </methods>
+            </class>
+            <class name="Testcases.TC05_CheckoutOverview">
+                <methods>
+                    <include name="CheckoutOverview"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Delete Random product with price">
+        <classes>
+            <class name="Testcases.TC01_Login">
+                <methods>
+                    <include name="LoginWithValidData_P"/>
+                </methods>
+            </class>
+            <class name="Testcases.TC2_Products">
+                <methods>
+                    <include name="Check_Get_RandomProducts"/>
+                </methods>
+            </class>
+            <class name="Testcases.TC03_YourCartPage">
+                <methods>
+                    <include name="Click_CheckOutFromYpurCart"/>
+                </methods>
+            </class>
+            <class name="Testcases.TC05_CheckoutOverview">
+                <methods>
+                    <include name="CheckNavigateBack_TwoTimes"/>
+                </methods>
+            </class>
+            <!--            <class name="Testcases.TC2_Products">-->
+            <!--                <methods>-->
+            <!--                    <include name="Check_DeleteItem"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
+            <class name="Testcases.TC05_CheckoutOverview">
+                <methods>
+                    <include name="Check_Delete_RandomProduct"/>
+                </methods>
+            </class>
+            <class name="Testcases.TC03_YourCartPage">
+                <methods>
+                    <include name="Click_CheckOutFromYpurCart"/>
+                </methods>
+            </class>
+            <class name="Testcases.TC04_CheckoutYourInformation">
+                <methods>
+                    <include name="CheckoutYourInformation"/>
+                </methods>
+            </class>
+            <class name="Testcases.TC04_CheckoutYourInformation">
+                <methods>
+                    <include name="CheckClickFinishbtn"/>
+                </methods>
+            </class>
+
+
+        </classes>
+    </test>
+</suite>
